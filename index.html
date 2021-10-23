@@ -5,7 +5,6 @@
 	<link rel = "stylesheet" href = "css/styles.css" />
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	  <link rel="icon" href="images/logo.jpg">
-	  <script src = "js/picomodal.js"></script>
 	  <script src = "js/script.js"></script>
 	<script src="https://kit.fontawesome.com/3215261dd9.js" crossorigin="anonymous"></script>
 	<title>TAZ Developers</title>
@@ -14,23 +13,32 @@
 	<div class = "container">
 		<nav class = "navbar">
 			<ul>
-				<li><a href = "#home">Home</a></li>
-				<li><a href = "#about">About</a></li>
-				<li><a href = "#team">Team</a></li>
-				<li><a href = "#connect">Connect</a></li>
+				<li class = "home active"><a href = "#home">Home</a></li>
+				<li class = "about"><a href = "#about">About</a></li>
+				<li class = "team"><a href = "#team">Team</a></li>
+				<li class = "connect"><a href = "#connect">Connect</a></li>
 			</ul>
 		</nav>
 		<nav class = "navbar-small">
 			<i class="fa fa-bars fa-3x" id = "modal" aria-hidden="true" onclick="hamburgerClick()"></i>
 		</nav>
+		<div id = "navbar-mobile" class = "mobile-bar">
+				<a href = "javascript:void(0)" class = "closeBtn" onclick="closeBar()">&times;</a>
+				<a class = "home active" href = "#home" onclick="closeBar()">Home</a>
+				<a class = "about" href = "#about" onclick="closeBar()">About</a>
+				<a class =  "team" href = "#team" onclick="closeBar()">Team</a>
+				<a class = "connect" href = "#connect" onclick="closeBar()">Connect</a>
+		</div>
 		<section id = "home">
 			<br />
 			<img id = "logo" src = "images/logo.jpg">
 			<br />
 			<h4 id = "intro">Freelance Developers here to make your design and technology projects a reality.</h4>
 			<br /><br />
+			<div class = "arrows">
 			<div class = "arrow-down">
 			<a href = "#about"><h3 class= "animate__animated animate__bounce animate__infinite" id = "learn-more"><i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></h3></a>
+		</div>
 		</div>
 		</section>
 		<section id = "about">
@@ -48,8 +56,16 @@
 			<p>&#9658; We are inclusive and respectful towards people of all races and genders.</p>
 		</div>
 		<br /><br />
-		<div class = "arrow-down">
-			<a href = "#team"><h3 class= "animate__animated animate__bounce animate__infinite" id = "learn-more"><i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></h3></a>
+		<div class = "arrows">
+			<div>
+			<a href = "#team">
+				<h3 class= "animate__animated animate__bounce animate__infinite arrow" id = "learn-more">
+					<i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></h3></a>
+				</div>
+				<div>
+					<a href = "#home"><h3 class= "animate__animated animate__bounce animate__infinite" id = "go-home">
+						<i class="fa fa-arrow-up fa-2x arrow" aria-hidden="true"></i></h3></a>
+					</div>
 		</div>
 		</section>
 		<section id = "team">
@@ -96,15 +112,42 @@
 				</a>
 			</div>
 			</div>
+			<br /><br />
+			<div class = "arrows">
+				<div class = "arrow-up">
+				<a href = "#team"><h3 class= "animate__animated animate__bounce animate__infinite" id = "go-to-team">
+					<i class="fa fa-arrow-up fa-2x arrow" aria-hidden="true"></i></h3></a>
+				</div>
+			</div>
 		</section>
-	  <script src = "js/picomodal.js"></script>
-			<script type="text/javascript">
-		const hamburgerClick = () => {
-	var modal = picoModal("Yo");
-	document.getgetElementById("modal").addEventListener("click", () => {
-		modal.show();
-	});
-}
-	</script>
+		<footer>
+			<p>TAZ Developers &copy;</p>
+		</footer>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src = "js/jquery.visible.js"></script>
+		<script>
+			$(document).ready(()=>{
+				$('.container').scroll(function(){
+					$('.container .navbar ul li').removeClass('active');
+					$('.mobile-bar a').removeClass('active');
+					if($('#home').visible(true)) {
+						$('.container .navbar ul li.home').addClass('active');
+						$('.mobile-bar a.home').addClass('active');
+					} else
+					if($('#about').visible(true)) {
+						$('.container .navbar ul li.about').addClass('active');
+						$('.mobile-bar a.about').addClass('active');
+					} else
+					if($('#team').visible(true)) {
+						$('.container .navbar ul li.team').addClass('active');
+						$('.mobile-bar a.team').addClass('active');
+					} else
+					if($('#connect').visible(true)) {
+						$('.container .navbar ul li.connect').addClass('active');
+						$('.mobile-bar a.connect').addClass('active');
+					}
+    			});
+			});
+		</script>
 	</body>
 </html>

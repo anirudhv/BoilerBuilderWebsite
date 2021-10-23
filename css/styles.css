@@ -39,6 +39,10 @@
 	color:  #f4f4f4;
 }
 
+.navbar ul li.active {
+	color: #6efaff;
+}
+
 .navbar ul li a:hover {
 	color: #6efaff;
 }
@@ -67,21 +71,19 @@
 	height: 400px;
 }
 
+.about-header {
+	color: #ffff00;
+}
+
 #intro {
 	color: #ffff00;
 	background-color: #000000;
 }
 
-#learn-more {
-	color: #ffffff;
-}
-
-#learn-more:hover {
-	color: #00ff00;
-}
-
-.about-header {
-	color:  #ffff00;
+.arrows {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 section {
@@ -176,6 +178,66 @@ section#connect {
 	justify-content: center;				
 }
 
+.arrows i {
+	color: #ffffff;
+}
+
+.arrows i:hover {
+	color: #00ff00;
+}
+
+.mobile-bar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition:  0.5s;
+}
+
+.mobile-bar a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.5s;
+}
+
+.mobile-bar a:hover {
+	color: #6efaff;
+}
+
+.mobile-bar a.active {
+	color: #6efaff;
+}
+
+.container .navbar ul li.active a{
+	color: #6efaff;
+}
+
+.mobile-bar .closeBtn {
+	position: absolute;
+	top:  0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	color: #ffffff;
+	text-align: center;
+}
+
 body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
@@ -191,7 +253,7 @@ body {
 		scroll-snap-type: none;
 	}
 
-	.arrow-down {
+	.arrows {
 		display: none;
 	}
 
@@ -206,14 +268,6 @@ body {
 		display: none;
 	}
 
-	.navbar ul {
-	display: flex;
-	list-style: none;
-	width: 100%;
-	flex-direction: row;
-	justify-content: center;
-	}
-
 	.navbar-small {
 		display: inline-block;
 	}
@@ -224,5 +278,13 @@ body {
 
 	#follow-us-text {
 		font-size: 1rem;
+	}
+
+	.mobile-bar {
+		padding-top: 15px;
+	}
+
+	.mobile-bar a {
+		font-size:  18px;
 	}
 }
