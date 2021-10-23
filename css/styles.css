@@ -59,6 +59,7 @@
 
 .navbar-small:hover {
 	color: #00ff00;
+	cursor: pointer;
 }
 
 #logo {
@@ -161,7 +162,7 @@ section#connect {
 }
 
 .social-box {
-	margin: 50px 25px 0px 50px;
+	margin: 25px 50px 0px 50px;
 }
 
 .social-box a{
@@ -170,7 +171,7 @@ section#connect {
 	justify-content: center;
 }
 
-.social-box a p {
+.social-box a strong {
 	display: flex;
 	justify-content: center;				
 }
