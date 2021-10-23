@@ -6,6 +6,9 @@
 .container {
 	width:  100%;
 	height: 100%;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
 }
 
 .navbar {
@@ -38,6 +41,24 @@
 
 .navbar ul li a:hover {
 	color: #6efaff;
+}
+
+.navbar-small {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: fixed;
+	top: 10;
+	margin: 10px 10px 0px 0px;
+	color: #ff0000;
+	z-index: 1;
+	display: flex;
+	display: none;
+	text-align: center;
+}
+
+.navbar-small:hover {
+	color: #00ff00;
 }
 
 #logo {
@@ -116,12 +137,12 @@ section#connect {
 
 .socialmedia {
 	text-decoration: none;
-	color: #ffffff;
+	color: #ffc0cb;
 	margin: 20px;
 }
 
 .socialmedia:hover {
-	color: #ffff00;
+	color: #ff0000;
 }
 
 #connect-header {
@@ -140,7 +161,7 @@ section#connect {
 }
 
 .social-box {
-	margin: 50px;
+	margin: 50px 25px 0px 50px;
 }
 
 .social-box a{
@@ -162,4 +183,45 @@ body {
 	height: 100vh;
 	line-height: 1.6;
 	overflow: hidden;
+}
+
+@media(max-width: 768px) {
+	.container {
+		scroll-snap-type: none;
+	}
+
+	.arrow-down {
+		display: none;
+	}
+
+	#social {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	}
+
+	 .navbar {
+		display: none;
+	}
+
+	.navbar ul {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	flex-direction: row;
+	justify-content: center;
+	}
+
+	.navbar-small {
+		display: inline-block;
+	}
+
+	#connect-header {
+		font-size: 2rem;
+	}
+
+	#follow-us-text {
+		font-size: 1rem;
+	}
 }

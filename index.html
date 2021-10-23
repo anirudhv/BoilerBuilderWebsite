@@ -5,6 +5,7 @@
 	<link rel = "stylesheet" href = "css/styles.css" />
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	  <link rel="icon" href="images/logo.jpg">
+	  <script src = "js/script.js"></script>
 	<script src="https://kit.fontawesome.com/3215261dd9.js" crossorigin="anonymous"></script>
 	<title>TAZ Developers</title>
 </head>
@@ -18,12 +19,18 @@
 				<li><a href = "#connect">Connect</a></li>
 			</ul>
 		</nav>
+		<nav class = "navbar-small">
+			<i class="fa fa-bars fa-3x" aria-hidden="true" onclick="hamburgerClick()"></i>
+		</nav>
 		<section id = "home">
+			<br />
 			<img id = "logo" src = "images/logo.jpg">
 			<br />
 			<h4 id = "intro">Freelance Developers here to make your design and technology projects a reality.</h4>
 			<br /><br />
+			<div class = "arrow-down">
 			<a href = "#about"><h3 class= "animate__animated animate__bounce animate__infinite" id = "learn-more"><i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></h3></a>
+		</div>
 		</section>
 		<section id = "about">
 			<h2 class ="about-header"> Who We Are</h2>
@@ -40,7 +47,9 @@
 			<p>&#9658; We are inclusive and respectful towards people of all races and genders.</p>
 		</div>
 		<br /><br />
-		<a href = "#team"><h3 class= "animate__animated animate__bounce animate__infinite" id = "learn-more"><i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></h3></a>
+		<div class = "arrow-down">
+			<a href = "#team"><h3 class= "animate__animated animate__bounce animate__infinite" id = "learn-more"><i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></h3></a>
+		</div>
 		</section>
 		<section id = "team">
 			<div class = "member">
@@ -56,31 +65,31 @@
 			<br />
 			<div id = "social">
 				<div class = "social-box">
-				<a class = "socialmedia" href = "mailto:brogant@purdue.edu,anirudhv@purdue.edu,zhao380@purdue.edu">
+				<a class = "socialmedia" target = "_blank" href = "mailto:brogant@purdue.edu,anirudhv@purdue.edu,zhao380@purdue.edu">
 					<i class="fa fa-envelope fa-4x" aria-hidden="false"></i>
 					<p>email@email.com</p>
 				</a>
 			</div>
 			<div class = "social-box">
-				<a class = "socialmedia" href = "https://www.facebook.com/OfficialTAZDevelopers/">
+				<a class = "socialmedia" target = "_blank" href = "https://www.facebook.com/OfficialTAZDevelopers/">
 					<i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
 					<p>@OfficialTAZDevelopers</p>
 				</a>
 			</div>
 			<div class = "social-box">
-				<a class = "socialmedia" href = "https://twitter.com/TAZDevelopers">
+				<a class = "socialmedia" target = "_blank" href = "https://twitter.com/TAZDevelopers">
 					<i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
 					<p>@TAZDevelopers</p>
 				</a>
 			</div>
 			<div class = "social-box">
-				<a class = "socialmedia" href = "https://www.instagram.com/tazdevs/">
+				<a class = "socialmedia" target = "_blank" href = "https://www.instagram.com/tazdevs/">
 					<i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
 					<p>@TAZDevs</p>
 				</a>
 			</div>
 			<div class = "social-box">
-				<a class = "socialmedia" href = "https://www.youtube.com/channel/UCCQB_yWfYZr5ZUPXLjsRK2g">
+				<a class = "socialmedia" target = "_blank" href = "https://www.youtube.com/channel/UCCQB_yWfYZr5ZUPXLjsRK2g">
 					<i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i>
 					<p>TAZ&nbsp;Developers</p>
 				</a>
