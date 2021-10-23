@@ -186,6 +186,10 @@ section#connect {
 	color: #00ff00;
 }
 
+.arrow-down {
+	margin-right: 20px;
+}
+
 .mobile-bar {
 	height: 100%;
 	width: 0;

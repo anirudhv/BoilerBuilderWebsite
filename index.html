@@ -57,12 +57,12 @@
 		</div>
 		<br /><br />
 		<div class = "arrows">
-			<div>
+			<div class = "arrow-down">
 			<a href = "#team">
 				<h3 class= "animate__animated animate__bounce animate__infinite arrow" id = "learn-more">
 					<i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></h3></a>
 				</div>
-				<div>
+				<div class = "arrow-up">
 					<a href = "#home"><h3 class= "animate__animated animate__bounce animate__infinite" id = "go-home">
 						<i class="fa fa-arrow-up fa-2x arrow" aria-hidden="true"></i></h3></a>
 					</div>
@@ -127,24 +127,30 @@
 		<script src = "js/jquery.visible.js"></script>
 		<script>
 			$(document).ready(()=>{
+				window.location.hash = 'home';
 				$('.container').scroll(function(){
 					$('.container .navbar ul li').removeClass('active');
 					$('.mobile-bar a').removeClass('active');
 					if($('#home').visible(true)) {
 						$('.container .navbar ul li.home').addClass('active');
 						$('.mobile-bar a.home').addClass('active');
+						window.location.hash = 'home';
 					} else
 					if($('#about').visible(true)) {
 						$('.container .navbar ul li.about').addClass('active');
 						$('.mobile-bar a.about').addClass('active');
+						window.location.hash = 'about';
 					} else
 					if($('#team').visible(true)) {
 						$('.container .navbar ul li.team').addClass('active');
 						$('.mobile-bar a.team').addClass('active');
+						window.location.hash = 'team';
 					} else
 					if($('#connect').visible(true)) {
 						$('.container .navbar ul li.connect').addClass('active');
 						$('.mobile-bar a.connect').addClass('active');
+						window.location.hash = 'connect';
+
 					}
     			});
 			});
