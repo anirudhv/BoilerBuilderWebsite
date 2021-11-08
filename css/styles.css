@@ -337,6 +337,11 @@ body {
 	flex-wrap: wrap;
 	}
 
+	.socialmedia {
+		width: 25px;
+		height: 25px;
+	}
+
 	 .navbar {
 		display: none;
 	}
