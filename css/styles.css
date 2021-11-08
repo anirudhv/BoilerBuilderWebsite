@@ -342,6 +342,10 @@ body {
 		height: 25px;
 	}
 
+	#logo {
+		width: 100%;
+	}
+
 	 .navbar {
 		display: none;
 	}
