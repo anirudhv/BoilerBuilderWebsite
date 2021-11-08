@@ -367,3 +367,10 @@ body {
 		font-size:  18px;
 	}
 }
+
+@media(max-width: 399px) {
+	#logo {
+		width: 350px;
+		height: 350px;
+	}
+}
