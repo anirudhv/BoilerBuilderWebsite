@@ -18,6 +18,10 @@ document.addEventListener("scroll", () => {
 	forEach(abouts, (a) => {
 		a.removeClass("active");
 	});
+	const portfolios = document.getElementsByClassName("portfolio");
+	forEach(abouts, (p) => {
+		a.removeClass("active");
+	});
 	const teams = document.getElementsByClassName("team");
 	forEach(teams, (t) => {
 		t.removeClass("active");
@@ -40,14 +44,20 @@ document.addEventListener("scroll", () => {
 			});
 			break;
 		case(vh >= 200 && vh < 300):
-			const elems3 = document.getElementsByClassName("team");
+			const elems3 = document.getElementsByClassName("portfolio");
 			forEach(elems3, (e) => {
 				e.addClass("active");
 			});
 			break;
 		case(vh >= 300 && vh < 400):
-			const elems4 = document.getElementsByClassName("connect");
+			const elems4 = document.getElementsByClassName("team");
 			forEach(elems4, (e) => {
+				e.addClass("active");
+			});
+			break;
+		case(vh >= 400 && vh < 500):
+			const elems5 = document.getElementsByClassName("connect");
+			forEach(elems5, (e) => {
 				e.addClass("active");
 			});
 			break;

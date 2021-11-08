@@ -15,6 +15,7 @@
 			<ul>
 				<li class = "home active"><a href = "#home">Home</a></li>
 				<li class = "about"><a href = "#about">About</a></li>
+				<li class = "portfolio"><a href = "#portfolio">Portfolio</a></li>
 				<li class = "team"><a href = "#team">Team</a></li>
 				<li class = "connect"><a href = "#connect">Connect</a></li>
 			</ul>
@@ -26,6 +27,7 @@
 				<a href = "javascript:void(0)" class = "closeBtn" onclick="closeBar()">&times;</a>
 				<a class = "home active" href = "#home" onclick="closeBar()">Home</a>
 				<a class = "about" href = "#about" onclick="closeBar()">About</a>
+				<a class = "portfolio" href = "#portfolio" onclick="closeBar()">Portfolio</a>
 				<a class =  "team" href = "#team" onclick="closeBar()">Team</a>
 				<a class = "connect" href = "#connect" onclick="closeBar()">Connect</a>
 		</div>
@@ -58,7 +60,7 @@
 		<br /><br />
 		<div class = "arrows">
 			<div class = "arrow-down">
-			<a href = "#team">
+			<a href = "#portfolio">
 				<h3 class= "animate__animated animate__bounce animate__infinite arrow" id = "learn-more">
 					<i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></h3></a>
 				</div>
@@ -68,12 +70,50 @@
 					</div>
 		</div>
 		</section>
+		<section id = "portfolio">
+			<h1 id = "portfolio-title">What We're Working On</h1>
+			<h3>We are currently developing a game development project template for students at Purdue University. Our client is <a id = "kesselman" target = "_blank" href = "https://polytechnic.purdue.edu/profile/jpkessel">Professor Jeffrey Kesselman</a>.</h3>
+			<embed src="GameDevelopmentTemplate_Document.pdf" width="500" height="375" 
+ 			type="application/pdf">
+ 			<br /><br />
+		<div class = "arrows">
+			<div class = "arrow-down">
+			<a href = "#team">
+				<h3 class= "animate__animated animate__bounce animate__infinite arrow" id = "learn-more">
+					<i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></h3></a>
+				</div>
+				<div class = "arrow-up">
+					<a href = "#about"><h3 class= "animate__animated animate__bounce animate__infinite" id = "go-home">
+						<i class="fa fa-arrow-up fa-2x arrow" aria-hidden="true"></i></h3></a>
+					</div>
+		</div>
+		</section>
 		<section id = "team">
+			<h1 id = "team-title">Meet the Team</h1>
 			<div class = "member">
-				<img class = "member-image" src = "images/anirudh.jpg">
-				<strong class ="member-name">Anirudh Venkataramanan</strong>
-				<span class = "member-description">Anirudh Venkataramanan is currently a senior at Purdue University. He has years of professional, academic, and personal experience in full-stack development for the web, mobile, and desktop. He is also skilled in creating visual graphics, data visualizations, and high quality videos.</span>
+				<strong class ="member-name"><p class = "first">Thomas Brogan</p></strong>
+				<span class = "member-description">Highly motivated software developer with expertise in low level systems/embedded programming and game engine design</span>
 			</div>
+			<div class = "member">
+				<strong class ="member-name"><p class = "first">Anirudh Venkataramanan</p></strong>
+				<span class = "member-description">Experienced web, mobile, and desktop full-stack developer; video producer; and graphic designer</span>
+			</div>
+			<div class = "member">
+				<strong class ="member-name"><p class = "first">Zilean Mao</p></strong>
+				<span class = "member-description">Proficient in 3D modeling and digital art</span>
+			</div>
+			<br /><br />
+		<div class = "arrows">
+			<div class = "arrow-down">
+			<a href = "#connect">
+				<h3 class= "animate__animated animate__bounce animate__infinite arrow" id = "learn-more">
+					<i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></h3></a>
+				</div>
+				<div class = "arrow-up">
+					<a href = "#portfolio"><h3 class= "animate__animated animate__bounce animate__infinite" id = "go-home">
+						<i class="fa fa-arrow-up fa-2x arrow" aria-hidden="true"></i></h3></a>
+					</div>
+		</div>
 		</section>
 		<section id = "connect">
 			<h1 id = "connect-header">Let's Talk</h1>
@@ -82,36 +122,36 @@
 			<br />
 			<div id = "social">
 				<div class = "social-box">
-				<a class = "socialmedia" target = "_blank" href = "mailto:brogant@purdue.edu,anirudhv@purdue.edu,zhao380@purdue.edu">
+				<a class = "socialmedia email" target = "_blank" href = "mailto:brogant@purdue.edu,anirudhv@purdue.edu,zhao380@purdue.edu">
 					<i class="fa fa-envelope fa-4x" aria-hidden="false"></i>
 					<strong>email@email.com</strong>
 				</a>
 			</div>
 			<div class = "social-box">
-				<a class = "socialmedia" target = "_blank" href = "https://www.facebook.com/OfficialTAZDevelopers/">
+				<a class = "socialmedia facebook" target = "_blank" href = "https://www.facebook.com/OfficialTAZDevelopers/">
 					<i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
 					<strong>@OfficialTAZDevelopers</strong>
 				</a>
 			</div>
 			<div class = "social-box">
-				<a class = "socialmedia" target = "_blank" href = "https://twitter.com/TAZDevelopers">
+				<a class = "socialmedia twitter" target = "_blank" href = "https://twitter.com/TAZDevelopers">
 					<i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
 					<strong>@TAZDevelopers</strong>
 				</a>
 			</div>
 			<div class = "social-box">
-				<a class = "socialmedia" target = "_blank" href = "https://www.instagram.com/tazdevs/">
+				<a class = "socialmedia instagram" target = "_blank" href = "https://www.instagram.com/tazdevs/">
 					<i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
 					<strong>@TAZDevs</strong>
 				</a>
 			</div>
 			<div class = "social-box">
-				<a class = "socialmedia" target = "_blank" href = "https://www.youtube.com/channel/UCCQB_yWfYZr5ZUPXLjsRK2g">
+				<a class = "socialmedia youtube" target = "_blank" href = "https://www.youtube.com/channel/UCCQB_yWfYZr5ZUPXLjsRK2g">
 					<i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i>
 					<strong>TAZ&nbsp;Developers</strong>
 				</a>
 			</div>
-			</div>
+		</div>
 			<br /><br />
 			<div class = "arrows">
 				<div class = "arrow-up">
