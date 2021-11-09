@@ -72,7 +72,7 @@
 		</section>
 		<section id = "portfolio">
 			<h1 id = "portfolio-title">What We're Working On</h1>
-			<h3>We are currently developing a game development project template for students at Purdue University. Our client is <a id = "kesselman" target = "_blank" href = "https://polytechnic.purdue.edu/profile/jpkessel">Professor Jeffrey Kesselman</a>.</h3>
+			<h3>We are currently developing a game development project template for students at Purdue University. Our client is the <a class = "portfolio-link" target = "_blank" href = "https://polytechnic.purdue.edu/departments/computer-graphics-technology">Computer Graphics Technology Department</a> at <a class = "portfolio-link" target="_blank" href = "https://www.purdue.edu/">Purdue University</a>. Our advisor for this project is <a class = "portfolio-link" target = "_blank" href = "https://polytechnic.purdue.edu/profile/jpkessel">Professor Jeffrey Kesselman</a>.</h3>
 			<br />
 			<a id = "project-learn-more" target = "_blank" href = "GameDevelopmentTemplate_Document.pdf">
 				Learn more about this project!
@@ -169,6 +169,7 @@
 		<script src = "js/jquery.visible.js"></script>
 		<script>
 			$(document).ready(()=>{
+				history.pushState(null, null, "#home");
 				$('.container').scroll(function(){
 					$('.container .navbar ul li').removeClass('active');
 					$('.mobile-bar a').removeClass('active');

@@ -137,9 +137,14 @@ section#connect {
 	color: #ffff00;
 }
 
-#kesselman {
+.portfolio-link {
 	text-decoration: none;
-	color: #FF0000;
+	color: #ff0000;
+	background-color: #000000;
+}
+
+.portfolio-link:hover {
+	color: #808080;
 }
 
 #team-title {
