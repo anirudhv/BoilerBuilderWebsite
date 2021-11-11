@@ -162,6 +162,16 @@ section#connect {
 	padding: 10px;
 }
 
+.member-email {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.member-email:hover {
+	color: #808080;
+}
+
 .member-description {
 	background-color: #002d9a;
 	padding: 0px 10px 0px 10px;
@@ -221,7 +231,7 @@ section#connect {
 }
 
 .social-box {
-	margin: 25px 50px 0px 50px;
+	margin: 25px 50px 25px 75px;
 }
 
 .social-box a{
