@@ -1,6 +1,8 @@
 * {
 	margin: 0;
 	padding: 0;
+	opacity: 100%;
+
 }
 
 .container {
@@ -96,16 +98,17 @@ section {
 	width: 100%;
 	height: 100vh;
 	scroll-snap-align: center;
+	text-align: center;
 }
 
 section#home {
 	background-image: url(../images/back1.jpg);
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 }
 
 section#about {
 	background-image: url(../images/back2.jpg);
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 }
 
 section#about #about-text {
@@ -114,17 +117,17 @@ section#about #about-text {
 
 section#portfolio {
 	background-image: url(../images/back5.jpg);
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 }
 
 section#team {
 	background-image: url(../images/back3.jpg);
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 }
 
 section#connect {
 	background-image: url(../images/back4.jpg);
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 }
 
 .socialmedia {
@@ -169,6 +172,15 @@ section#connect {
 }
 
 .member-email:hover {
+	color: #808080;
+}
+
+.member-web {
+	color: #ffff00;
+	text-decoration: none;
+}
+
+.member-web:hover {
 	color: #808080;
 }
 
